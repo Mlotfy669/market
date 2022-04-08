@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+  }
+  html {
+      scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 2px;
+  }

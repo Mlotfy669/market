@@ -1,0 +1,84 @@
+.Container {
+    height: 60px;
+    @media screen and (max-width:380px) {
+        height: 50px;
+    }
+
+    .Wrapper {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width:380px) {
+            padding: 10px 0;
+        }
+        .Left {
+            flex: 1;
+            display: flex;
+            align-items: center;
+
+            .Language {
+                font-size: 14px;
+                cursor: pointer;
+                @media screen and (max-width:380px) {
+                    display: none;
+                }
+            }
+
+            .SearchContainer {
+                border: 0.5px solid lightgray;
+                display: flex;
+                align-items: center;
+                margin-left: 25px;
+                padding: 5px;
+
+                .Input {
+                    border: none;
+                    outline: none;
+                    @media screen and (max-width:380px) {
+                        width: 50px;
+                    }
+                }
+
+                .searchIcon {
+                    color: gray;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .Center {
+            flex: 1;
+            text-align: center;
+
+            .Logo {
+                font-weight: bold;
+                @media screen and (max-width:380px) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .Right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            @media screen and (max-width:380px) {
+                justify-content: center ;
+                flex: 2;
+            }
+            .MenuItem {
+                font-size: 14px;
+                cursor: pointer;
+                margin-left: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                @media screen and (max-width:380px) {
+                    margin-left: 10px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

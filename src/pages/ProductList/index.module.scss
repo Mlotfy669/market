@@ -1,0 +1,31 @@
+.title {
+    margin: 20px;
+}
+
+.FilterContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Filter {
+    margin: 20px;
+    @media screen and (max-width:380px) {
+        margin: 10px;
+    }
+}
+
+.FilterText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.Select {
+    padding: 10px;
+    margin-right: 20px;
+    outline: none;
+    @media screen and (max-width:380px) {
+        margin: 10px 10px 10px 0;
+    }
+}
